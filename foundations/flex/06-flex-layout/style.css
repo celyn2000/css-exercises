@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -23,4 +27,109 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* Code here */
+
+/* 
+.left-links a, .right-links a {
+  text-decoration: none;
+  color: rgb(104, 104, 104);
+}
+
+.left-links li, .right-links li {
+  list-style: none;
+}
+
+.left-links, .right-links{
+  display: flex;
+  gap: 20px;
+  padding: 0px 15px;
+}
+
+.header, .footer {
+  display: flex;
+}
+
+.footer{
+  background-color: #eeeeee;
+}
+
+.left-links{
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  align-items: flex-end;
+}
+
+.content img, .content input {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  width: auto;
+  padding: 10px;
+}
+ */
+
+ /* Odin Project Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
